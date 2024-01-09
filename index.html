@@ -10,27 +10,39 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css" />
   </head>
   <body>
-    <section class="block block--dark block--skewed-left hero">
-      <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
-          <p class="hero__tagline">
-            Deplay your websites in less than 60 seconds.
-          </p>
-          <a href="#" class="btn btn--accent">GET STARTED</a>
-        </header>
-        <picture
-          ><img
-            class="hero__image"
-            src="/components/images/banner.webp"
-            alt="logo"
-        /></picture>
+    <section class="block container block-domain">
+      <header class="block__header">
+        <h2>Starting at $9 per month</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ab?
+        </p>
+      </header>
+      <div class="input-gruop">
+        <input
+          type="text"
+          class="input"
+          placeholder="Enter domain name here..."
+        />
+        <button class="btn btn--accent">
+          <svg class="icon icon--white">
+            <use xlink:href="components\images\sprite.svg#search"></use>
+          </svg>
+          Search
+        </button>
       </div>
+      <ul class="list block-domain__prices">
+        <li><span class="badge badge--secondary">.com $9</span></li>
+        <li>.sg $10</li>
+        <li>.space $11</li>
+        <li>.info $14</li>
+        <li>.net $10</li>
+        <li>.xyz $10</li>
+      </ul>
     </section>
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
