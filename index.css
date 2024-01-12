@@ -144,7 +144,6 @@ a {
 .list {
   list-style: none;
   padding: 0;
-  
 }
 
 .list--inline .list__item {
@@ -153,7 +152,7 @@ a {
 }
 
 .list--tick {
-  list-style-image: url(../components/images/tick.svg);
+  list-style-image: url(/components/images/tick.svg);
   padding-left: 3rem;
   color: var(--color-headings);
 }
@@ -214,7 +213,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -303,6 +302,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-gruop .btn {
@@ -678,9 +678,18 @@ nav {
 
 /* Callouts */
 
+.callout__box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 60px;
+}
+
 .callout {
   padding: 4rem;
   border-radius: 5px;
+  max-width: 1280px;
+
 }
 
 .callout--primary {
@@ -752,8 +761,9 @@ nav {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -794,7 +804,7 @@ nav {
   margin: 1rem 0;
 }
 
-.feature__image > img {
+.feature__image {
   width: 100%;
 }
 
@@ -806,7 +816,7 @@ nav {
 
 /* Showcase Block */
 
-.block-showcase__image > img{
+.block-showcase__image > img {
   width: 100%;
 }
 
@@ -814,7 +824,7 @@ nav {
   .block-showcase .grid {
     grid-template-columns: 50% 50%;
   }
-  
+
   .block-showcase__image {
     justify-self: end;
   }
@@ -852,13 +862,15 @@ nav {
   opacity: 0.3;
 }
 
+.footer a {
+  color: #777;
+}
+
 @media screen and (min-width: 768px) {
-  
   .footer a {
-    color: #777;
     transition: color 0.3s;
   }
-  
+
   .footer a:hover {
     color: #fff;
   }
@@ -895,7 +907,7 @@ nav {
     border: none;
   }
 
-  .footer__section .list{
+  .footer__section .list {
     margin: 0;
   }
 
